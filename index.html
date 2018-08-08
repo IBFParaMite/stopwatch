@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <script src="alarm.js"></script>
+    <link rel="stylesheet" href="stylesheet.css">
+    <title>Timer</title>
+</head>
+
+<body onload="displayTime()">
+    <script type="text/javascript">
+        function reloadPage() {
+            location.reload();
+        }
+    </script>
+    <div class="nav-box">
+        <table style="width: 100%; height: auto;">
+            <tr>
+                <td style="width: 20%;">
+                    <a href="\" class="buttonstyle">Alarm</a>
+                </td>
+                <td style="width: 20%;">
+                    <a href="clock.html" class="buttonstyle">Clock</a>
+                </td>
+                <td style="width: 20%;">
+                    <a href="timer.html" class="buttonstyle">Timer</a>
+                </td>
+                <td style="width: 20%;">
+                    <a href="stopwatch.html" class="buttonstyle">Stopwatch</a>
+                </td>
+                <td style="width: 20%;">
+                    <a href="daysto.html" class="buttonstyle">Days to</a>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="timeoutputs">
+        <h1>The current time is</h1>
+        <h1 id="time-output"></h1>
+    </div>
+    <div class="timeoutputs">
+        <h1 id="alarm-output">No alarm time set</h1>
+        <h1 id="time-left">N/A</h1>
+    </div>
+    </div>
+    <div class="command-box">
+        <div style="border-bottom: 2px solid black;">
+            <table style="width: 100%;">
+                <tr>
+                    <td>
+                        <button class="buttonstyle" onclick="loadAlarm()">Set alarm</button>
+                    </td>
+                    <td>
+                        <button class="buttonstyle" onclick="reloadPage()">Hide alarm</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div style="border-bottom: 2px solid black;">
+            <h1>Set Alarm Time</h1>
+            <form>
+                <table>
+                    <tr>
+                        <td>Hour</td>
+                        <td>Minute</td>
+                        <td>Seconds</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="number" id="seth" value="19">
+                        </td>
+                        <td>
+                            <input type="number" id="setm" value="00">
+                        </td>
+                        <td>
+                            <input type="number" id="sets" value="00">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+            <br>
+        </div>
+        <div style="border-bottom: 2px solid black;">
+            <table style="width: 100%; height: auto;">
+                <tr>
+                    <td>
+                        <h1>Alarm Presets</h1>
+                        <h2>Saved Presets</h2>
+                    </td>
+                    <td>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 33%;">
+                        <input type="button" class="buttonstyle" onclick="displayTimerPreset(0)" value="Preset 1">
+                    </td>
+                    <td style="width: 33%;">
+                        <input type="button" class="buttonstyle" onclick="displayTimerPreset(1)" value="Preset 2">
+                    </td>
+                    <td style="width: 33%;">
+                        <input type="button" class="buttonstyle" onclick="displayTimerPreset(2)" value="Preset 3">
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 33%;">
+                        <input type="button" class="buttonstyle" onclick="displayPresets(0)" value="Display Presets">
+                    </td>
+                    <td style="width: 33%;">
+                        <input type="button" class="buttonstyle" onclick="displayPresets(1)" value="Hide Presets">
+                    </td>
+                </tr>
+            </table>
+            <h2>New Preset</h2>
+            <table style="width: 45%; height: auto;">
+                <tr>
+                    <td>Alarm Time</td>
+                    <td>
+                        <input type="datetime" id="presetvalue" value="12:00:00">
+                    </td>
+                    <td>
+                        <input type="button" class="buttonstyle" onclick="savePreset()" value="Submit">
+                    </td>
+                </tr>
+            </table>
+            <br>
+        </div>
+    </div>
+
+    <!--Output-->
+
+    
+    <!--
+    <div class="output-box">
+        <table style="margin: auto;">
+            <tr>
+                <td>
+                    
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div style="border-top: 2px solid black;">
+                        
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <div>
+            <h1 id="preset-output"></h1>
+        </div>
+    </div>-->
+
+</body>
+
+</html>
