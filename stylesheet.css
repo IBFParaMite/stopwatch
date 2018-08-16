@@ -37,14 +37,14 @@ h1 {
 .nav-box {
     background-color: rgb(87, 85, 85);
     width: auto;
-    height: 4vh;
+    height: 6vh;
     border: 3px solid black;
     padding: 1%;
 }
 
 .timeoutputs {
     background-color: white;
-    border: 3px solid black;
+    border: 2px solid black;
     border-top: none;
     width: auto;
     margin: 0;
@@ -54,9 +54,19 @@ h1 {
 
 .contentbox {
     border: 2px solid black;
-    height: 20vh;
-    width: auto;
-    background-color: white;
+    border-top: none;
+    background-color: white; 
+    padding: 0.5%;
+    margin: 0;
+}
+
+.buttoncontainer {
+    border: 2px solid black;
+    border-top: none;
+    background-color: white; 
+    padding: 0.5%;
+    margin: 0;
+    height: 30vh;
 }
 
 .buttonstyle {
@@ -65,7 +75,7 @@ h1 {
     height: auto;
     display: inline-block;
     text-align: center;
-    width: 100%;
+    width: 98%;
     text-decoration: none;
     padding: 0.5%;
     border: 1px solid grey;

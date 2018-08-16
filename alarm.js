@@ -3,9 +3,9 @@ var savedpresets = ["15:00:00", "16:00:00", "17:00:00"];
 
 // function to add a zero onto the number of either the alarm or the current time if is a number smaller than 10
 function addZero(i) {
-    if (i < 10) {
+    if (i < 10 && i >= 0) {
         i = "0" + i;
-    }
+    } 
     return i;
 }
 
@@ -110,6 +110,7 @@ function loadAlarm() {
     setInterval(function () { alarm(); }, 1000);
 }
 
+
 // function to save the presets for the alarm
 function savePreset() {
     // gets the value of the HTML input box
@@ -127,4 +128,8 @@ function displayPresets(y) {
     } else {
         document.getElementById("preset-output").innerHTML = "";
     }
+}
+
+function alarmPreset() {
+
 }

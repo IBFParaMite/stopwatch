@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <script src="datedifference.js"></script>
+    <link rel="stylesheet" href="stylesheet.css">
+    <title>Countdown</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        function reloadPage() {
+            location.reload();
+        }
+    </script>
+    <div class="nav-box">
+        <table style="width: 100%; height: auto;">
+            <tr>
+                <td style="width: 25%;">
+                    <a href="\" class="buttonstyle">Alarm</a>
+                </td>
+                <td style="width: 25%;">
+                    <a href="clock.html" class="buttonstyle">Clock</a>
+                </td>
+                <td style="width: 25%;">
+                    <a href="timer.html" class="buttonstyle">Timer</a>
+                </td>
+                <td style="width: 25%;">
+                    <a href="stopwatch.html" class="buttonstyle">Stopwatch</a>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td style="width: 25%;">
+                    <a href="daysto.html" class="buttonstyle">Countdown</a>
+                </td>
+                <td style="width: 25%;">
+                    <a href="datedifference.html" class="buttonstyle">Difference between dates</a>
+                </td>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+    <div class="contentbox">
+        <table>
+            <tr>
+                <td>
+                    <button onclick="reloadPage()">Reload</button>
+                </td>
+            </tr>
+        </table>
+
+    </div>
+    <div class="contentbox">
+        <h2>
+            <i>Set date 1</i>
+        </h2>
+        <form>
+            <table>
+                <tr>
+                    <td>Day</td>
+                    <td>Month</td>
+                    <td>Year</td>
+                    <td>Hour</td>
+                    <td>Minutes</td>
+                    <td>Seconds</td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="number" id="setd1" value="31">
+                    </td>
+                    <td>
+                        <input type="number" id="setm1" value="7">
+                    </td>
+                    <td>
+                        <input type="number" id="sety1" value="2018">
+                    </td>
+                    <td>
+                        <input type="number" id="setho1" value="00">
+                    </td>
+                    <td>
+                        <input type="number" id="setmi1" value="00">
+                    </td>
+                    <td>
+                        <input type="number" id="setse1" value="00">
+                    </td>
+                </tr>
+            </table>
+        </form>
+        <br>
+        <h2>
+            <i>Set date 2</i>
+        </h2>
+        <form>
+            <table>
+                <tr>
+                    <td>Day</td>
+                    <td>Month</td>
+                    <td>Year</td>
+                    <td>Hour</td>
+                    <td>Minutes</td>
+                    <td>Seconds</td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="number" id="setd2" value="14">
+                    </td>
+                    <td>
+                        <input type="number" id="setm2" value="8">
+                    </td>
+                    <td>
+                        <input type="number" id="sety2" value="2018">
+                    </td>
+                    <td>
+                        <input type="number" id="setho2" value="00">
+                    </td>
+                    <td>
+                        <input type="number" id="setmi2" value="00">
+                    </td>
+                    <td>
+                        <input type="number" id="setse2" value="00">
+                    </td>
+                </tr>
+            </table>
+        </form>
+        <br>
+    </div>
+    <div class="contentbox">
+        <h1 id="date1"></h1>
+        <h1 id="date2"></h1>
+    </div>
+    <div class="contentbox">
+        <h1 id="placeholdertext1"></h1>
+        <i>
+            <h2 id="dayoutput"></h2>
+        </i>
+        <h1 id="placeholdertext2"></h1>
+        <h2 id="houroutput"></h2>
+        <h2 id="minoutput"></h2>
+        <h2 id="secoutput"></h2>
+    </div>
+</body>
+
+</html>

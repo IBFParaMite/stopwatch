@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="stylesheet.css">
 
     <!-- P5 JS import-->
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.1/p5.js"></script>
 
     <!-- JS File import -->
@@ -16,28 +15,40 @@
     <title>Timer</title>
 </head>
 
-<body>
-
-    <!--Output-->
-
-    <div class="output-box">
-        <table style="margin: auto;">
+<body onload="displayTime()">
+    <div class="nav-box">
+        <table style="width: 100%; height: auto;">
             <tr>
-                <td>
-                    <h1 id="time-output"></h1>
+                <td style="width: 25%;">
+                    <a href="\" class="buttonstyle">Alarm</a>
+                </td>
+                <td style="width: 25%;">
+                    <a href="clock.html" class="buttonstyle">Clock</a>
+                </td>
+                <td style="width: 25%;">
+                    <a href="timer.html" class="buttonstyle">Timer</a>
+                </td>
+                <td style="width: 25%;">
+                    <a href="stopwatch.html" class="buttonstyle">Stopwatch</a>
                 </td>
             </tr>
             <tr>
-                <td>
-                    <div style="border-top: 2px solid black;">
-                        <h1 id="timer-output"></h1>
-                    </div>
+                <td></td>
+                <td style="width: 25%;">
+                    <a href="daysto.html" class="buttonstyle">Countdown</a>
                 </td>
+                <td style="width: 25%;">
+                    <a href="datedifference.html" class="buttonstyle">Difference between dates</a>
+                </td>
+                <td></td>
             </tr>
         </table>
-        <div>
-            <h1 id="preset-output"></h1>
-        </div>
+    </div>
+
+    <!--Output-->
+    <div class="contentbox">
+        <div id="output"></div>
+        <h2 id="currenttime"></h2>
     </div>
 </body>
 

@@ -18,21 +18,28 @@
     <div class="nav-box">
         <table style="width: 100%; height: auto;">
             <tr>
-                <td style="width: 20%;">
+                <td style="width: 25%;">
                     <a href="\" class="buttonstyle">Alarm</a>
                 </td>
-                <td style="width: 20%;">
+                <td style="width: 25%;">
                     <a href="clock.html" class="buttonstyle">Clock</a>
                 </td>
-                <td style="width: 20%;">
+                <td style="width: 25%;">
                     <a href="timer.html" class="buttonstyle">Timer</a>
                 </td>
-                <td style="width: 20%;">
+                <td style="width: 25%;">
                     <a href="stopwatch.html" class="buttonstyle">Stopwatch</a>
                 </td>
-                <td style="width: 20%;">
-                    <a href="daysto.html" class="buttonstyle">Days to</a>
+            </tr>
+            <tr>
+                <td></td>
+                <td style="width: 25%;">
+                    <a href="daysto.html" class="buttonstyle">Countdown</a>
                 </td>
+                <td style="width: 25%;">
+                    <a href="datedifference.html" class="buttonstyle">Difference between dates</a>
+                </td>
+                <td></td>
             </tr>
         </table>
     </div>
@@ -44,22 +51,21 @@
         <h1 id="alarm-output">No alarm time set</h1>
         <h1 id="time-left">N/A</h1>
     </div>
+    <div class="contentbox">
+        <table style="width: 100%;">
+            <tr>
+                <td style="width: 50%;">
+                    <button class="buttonstyle" onclick="loadAlarm()">Set Timer</button>
+                </td>
+                <td style="width: 50%;">
+                    <button class="buttonstyle" onclick="reloadPage()">Reset Timer</button>
+                </td>
+            </tr>
+        </table>
     </div>
-    <div class="command-box">
-        <div style="border-bottom: 2px solid black;">
-            <table style="width: 100%;">
-                <tr>
-                    <td>
-                        <button class="buttonstyle" onclick="loadAlarm()">Set alarm</button>
-                    </td>
-                    <td>
-                        <button class="buttonstyle" onclick="reloadPage()">Hide alarm</button>
-                    </td>
-                </tr>
-            </table>
-        </div>
-        <div style="border-bottom: 2px solid black;">
-            <h1>Set Alarm Time</h1>
+    <div class="buttoncontainer">
+        <div style="float: left; width: 32%; height: 50%; padding: 0.5%;">
+            <h2>Set Alarm Time</h2>
             <form>
                 <table>
                     <tr>
@@ -82,12 +88,12 @@
             </form>
             <br>
         </div>
-        <div style="border-bottom: 2px solid black;">
+        <div style="float: right; width: 65%; height: 30%; padding: 0.5%;">
             <table style="width: 100%; height: auto;">
                 <tr>
                     <td>
-                        <h1>Alarm Presets</h1>
-                        <h2>Saved Presets</h2>
+                        <h2>Alarm Presets</h2>
+                        <h3>Saved Presets</h3>
                     </td>
                     <td>
 
@@ -113,8 +119,8 @@
                     </td>
                 </tr>
             </table>
-            <h2>New Preset</h2>
-            <table style="width: 45%; height: auto;">
+            <h3>New Preset</h3>
+            <table style="width: 45%; height: auto; ">
                 <tr>
                     <td>Alarm Time</td>
                     <td>
@@ -128,31 +134,6 @@
             <br>
         </div>
     </div>
-
-    <!--Output-->
-
-    
-    <!--
-    <div class="output-box">
-        <table style="margin: auto;">
-            <tr>
-                <td>
-                    
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <div style="border-top: 2px solid black;">
-                        
-                    </div>
-                </td>
-            </tr>
-        </table>
-        <div>
-            <h1 id="preset-output"></h1>
-        </div>
-    </div>-->
-
 </body>
 
 </html>
