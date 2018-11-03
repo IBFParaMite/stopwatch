@@ -1,0 +1,103 @@
+﻿@{
+    Page.Title = "Stopwatch";
+    Layout = "~/Shared/_Layout.cshtml";
+}
+
+<div class="row">
+    <div class="col-md-6">
+        <h2>Set alarm time</h2>
+    </div>
+</div>
+
+<div class="form-group row">
+    <div class="col-md-2">
+        <label for="seth">Hour</label>
+        <input type="number" class="form-control" aria-label="Hour" id="seth" value="18">
+        
+    </div>
+    <div class="col-md-2">
+        <label for="setm">Minutes</label>
+        <input type="number" class="form-control" aria-label="Minute" id="setm" value="30">
+    </div>
+    <div class="col-md-2">
+        <label for="setm">Seconds</label>
+        <input type="number" class="form-control" aria-label="Second" id="sets" value="00">
+    </div>
+    <div class="col-md-2">
+        <label for="hourSelect">AM / PM</label>
+        <select class="custom-select" id="hourSelect">
+            <option selected value="1">AM</option>
+            <option value="2">PM</option>
+        </select>
+    </div>
+    <br />
+</div>
+
+<div class="row">
+    <div class="col-md-6">
+        <button class="btn btn-outline-secondary" onclick="displayTime(); loadAlarm()">Set Alarm</button>
+        <button class="btn btn-outline-secondary" onclick="location.reload();">Reset Alarm</button>
+    </div>
+</div>
+
+<hr />
+<div class="row">
+    <div class="col-md-12">
+        <h2>Alarm Presets</h2>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-6">
+        <h3>Saved Presets</h3>
+        <input type="button" class="btn btn-outline-secondary" onclick="displayTimerPreset(0)" value="Preset 1">
+        <input type="button" class="btn btn-outline-secondary" onclick="displayTimerPreset(1)" value="Preset 2">
+        <input type="button" class="btn btn-outline-secondary" onclick="displayTimerPreset(2)" value="Preset 3">
+    </div>
+    <div class="col-md-6">
+        <h3>New Preset</h3>
+        <table class="table table-bordered">
+            <tr>
+                <td>Alarm Time</td>
+                <td>
+                    <input type="datetime" class="form-control" id="presetvalue" value="12:00:00">
+                </td>
+                <td>
+                    <input type="button" class="btn btn-outline-secondary" onclick="savePreset()" value="Submit">
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+
+@*<div style="float: right; width: 65%; height: 30%; padding: 0.5%;">
+        <table style="width: 100%; height: auto;">
+            <tr>
+                <td>
+                    <h2>Alarm Presets</h2>
+                    <h3>Saved Presets</h3>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td style="width: 33%;">
+
+                    <input type="button" class="btn btn-outline-secondary" onclick="displayPresets(0)" value="Display Presets">
+                    <input type="button" class="btn btn-outline-secondary" onclick="displayPresets(1)" value="Hide Presets">
+                </td>
+            </tr>
+        </table>
+        <h3>New Preset</h3>
+        <table style="width: 45%; height: auto; ">
+            <tr>
+                <td>Alarm Time</td>
+                <td>
+                    <input type="datetime" id="presetvalue" value="12:00:00">
+                </td>
+                <td>
+                    <input type="button" class="btn btn-outline-secondary" onclick="savePreset()" value="Submit">
+                </td>
+            </tr>
+        </table>
+        <br>
+    </div>*@
